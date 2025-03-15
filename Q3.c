@@ -7,8 +7,28 @@
 
 int main() {
 
-	int arr[10];
-	arr[0] = 1;
+	int arr[10] = {1,2,3,4,5};
+	int idx;
+	int value;
+
+	printf("\n");
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	printf("\nEnter the Index : ");
+	scanf_s("%d",&idx);
+
+	printf("\n\nEnter the Value : ");
+	scanf_s("%d",&value);
+	arr[idx] = value;
+
+	printf("\n\n");
+	for (int i = 0; i < 10;i++) {
+		printf("%d ",arr[i]);
+	}
+
+	printf("\n\n");
 
 	return 0;
 }
